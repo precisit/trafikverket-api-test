@@ -38,34 +38,35 @@ namespace TrainData {
                                             "<FILTER>" +
                                                 "<IN name='TypeOfTraffic' value='Tåg'/>" +
                                             "</FILTER>" +
-                                            "<EXCLUDE>ActivityId</EXCLUDE>" +
-                                            "<EXCLUDE>Advertised</EXCLUDE>" +
-                                            "<EXCLUDE>Booking[]</EXCLUDE>" +
-                                            "<EXCLUDE>Deleted</EXCLUDE>" +
-                                            "<EXCLUDE>Deviation[]</EXCLUDE>" +
-                                            "<EXCLUDE>MobileWebLink</EXCLUDE>" +
-                                            "<EXCLUDE>ModifiedTime</EXCLUDE>" +
-                                            "<EXCLUDE>NewEquipment</EXCLUDE>" +
-                                            "<EXCLUDE>OtherInformation[]</EXCLUDE>" +
-                                            "<EXCLUDE>Service</EXCLUDE>" +
-                                            "<EXCLUDE>TechnicalTrainIdent</EXCLUDE>" +
-                                            "<EXCLUDE>TrackAtLocation</EXCLUDE>" +
-                                            "<EXCLUDE>TrainComposition</EXCLUDE>" +
-                                            "<EXCLUDE>TypeOfTraffic</EXCLUDE>" +
-                                            "<EXCLUDE>WebLink</EXCLUDE>" +
-                                            "<EXCLUDE>WebLinkName</EXCLUDE>" +
-                                            "<EXCLUDE>FromLocation.LocationName</EXCLUDE>" +
-                                            "<EXCLUDE>FromLocation.Order</EXCLUDE>" +
-                                            "<EXCLUDE>FromLocation.Priority</EXCLUDE>" +
-                                            "<EXCLUDE>ToLocation.LocationName</EXCLUDE>" +
-                                            "<EXCLUDE>ToLocation.Order</EXCLUDE>" +
-                                            "<EXCLUDE>ToLocation.Priority</EXCLUDE>" +
-                                            "<EXCLUDE>ViaFromLocation.LocationName</EXCLUDE>" +
-                                            "<EXCLUDE>ViaFromLocation.Order</EXCLUDE>" +
-                                            "<EXCLUDE>ViaFromLocation.Priority</EXCLUDE>" +
-                                            "<EXCLUDE>ViaToLocation.LocationName</EXCLUDE>" +
-                                            "<EXCLUDE>ViaToLocation.Order</EXCLUDE>" +
-                                            "<EXCLUDE>ViaToLocation.Priority</EXCLUDE>" +
+                                                "<EXCLUDE>ActivityId</EXCLUDE>" +
+                                                "<EXCLUDE>Advertised</EXCLUDE>" +
+                                                "<EXCLUDE>Booking[]</EXCLUDE>" +
+                                                "<EXCLUDE>Deleted</EXCLUDE>" +
+                                                "<EXCLUDE>Deviation[]</EXCLUDE>" +
+                                                "<EXCLUDE>MobileWebLink</EXCLUDE>" +
+                                                "<EXCLUDE>ModifiedTime</EXCLUDE>" +
+                                                "<EXCLUDE>NewEquipment</EXCLUDE>" +
+                                                "<EXCLUDE>OtherInformation[]</EXCLUDE>" +
+                                                "<EXCLUDE>Service</EXCLUDE>" +
+                                                "<EXCLUDE>TechnicalTrainIdent</EXCLUDE>" +
+                                                "<EXCLUDE>TrackAtLocation</EXCLUDE>" +
+                                                "<EXCLUDE>TrainComposition</EXCLUDE>" +
+                                                "<EXCLUDE>TypeOfTraffic</EXCLUDE>" +
+                                                "<EXCLUDE>WebLink</EXCLUDE>" +
+                                                "<EXCLUDE>WebLinkName</EXCLUDE>" +
+                                                "<EXCLUDE>FromLocation.LocationName</EXCLUDE>" +
+                                                "<EXCLUDE>FromLocation.Order</EXCLUDE>" +
+                                                "<EXCLUDE>FromLocation.Priority</EXCLUDE>" +
+                                                "<EXCLUDE>ToLocation.LocationName</EXCLUDE>" +
+                                                "<EXCLUDE>ToLocation.Order</EXCLUDE>" +
+                                                "<EXCLUDE>ToLocation.Priority</EXCLUDE>" +
+                                                "<EXCLUDE>ViaFromLocation.LocationName</EXCLUDE>" +
+                                                "<EXCLUDE>ViaFromLocation.Order</EXCLUDE>" +
+                                                "<EXCLUDE>ViaFromLocation.Priority</EXCLUDE>" +
+                                                "<EXCLUDE>ViaToLocation.LocationName</EXCLUDE>" +
+                                                "<EXCLUDE>ViaToLocation.Order</EXCLUDE>" +
+                                                "<EXCLUDE>ViaToLocation.Priority</EXCLUDE>" +
+                                                "<EXCLUDE>OtherInformation</EXCLUDE>" +
                                         "</QUERY>" +
                                     "</REQUEST>";
 
