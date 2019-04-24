@@ -12,6 +12,7 @@ namespace TrainData {
         static void Main(string[] args) {
             Console.WriteLine("--- Downloading train data ---");
 
+            string result = "";
             WebClient webclient = new WebClient();
             webclient.UploadStringCompleted += (obj, arguments) => {
                 if (arguments.Cancelled == true) {
@@ -22,11 +23,11 @@ namespace TrainData {
                     Console.Write("Request failed.");
                 }
                 else {
-                    formatResponse(arguments.Result);
+                    result = result + "\n" + arguments.Result;
                     Console.Write("Data downloaded.");
                 }
                 Console.WriteLine("\n");
-                Console.WriteLine("Type 'Q' to exit.");
+                Console.WriteLine("TEST Type 'Q' to exit.");
             };
 
             try {
@@ -37,6 +38,7 @@ namespace TrainData {
                                             "<FILTER>" +
                                                 "<IN name='TypeOfTraffic' value='Tåg'/>" +
                                             "</FILTER>" +
+                                            "<EXCLUDE>ActivityId</EXCLUDE>" +
                                             "<EXCLUDE>Advertised</EXCLUDE>" +
                                             "<EXCLUDE>Booking[]</EXCLUDE>" +
                                             "<EXCLUDE>Deleted</EXCLUDE>" +
@@ -87,7 +89,9 @@ namespace TrainData {
                 }
             }
             Console.WriteLine("\n");
+            formatResponse(result);
         }
+
 
         private static string formatResponse(string xml) {
             XDocument doc = XDocument.Parse(xml);
@@ -100,6 +104,9 @@ namespace TrainData {
                 doc.WriteTo(xmlWriter);
             }
             doc.Save("result.xml");
+            Console.WriteLine("Saved " + 
+                System.Text.ASCIIEncoding.Unicode.GetByteCount(sb.ToString()) + 
+                " bytes of data");
             return sb.ToString();
         }
     }
