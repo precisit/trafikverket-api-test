@@ -27,7 +27,7 @@ namespace TrainData {
                     Console.Write("Data downloaded.");
                 }
                 Console.WriteLine("\n");
-                Console.WriteLine("TEST Type 'Q' to exit.");
+                Console.WriteLine("Type 'Q' to exit.");
             };
 
             try {
